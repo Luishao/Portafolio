@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    gap: 10px;
+}
+.rodapie{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+
+}
+@media screen and (max-width: 480px) {
+    .footer,.rodapie{
+    width: 480px;
+    }
+
+    
+ }

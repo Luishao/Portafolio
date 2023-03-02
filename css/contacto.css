@@ -1,0 +1,74 @@
+.form__contacto {
+    font-family: 'Raleway';
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0px 0px;
+    background: #EAF2FD;
+   width: 100%;
+    gap: 12px;
+ 
+}
+
+.contacto {
+    width: 1136px;
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap:16px;
+}
+   
+.contact__text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.contact__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+}
+
+.contact__subtext {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 656px;
+    height: 397px;
+
+}
+
+.button_contacto {
+    justify-content: center;
+    background: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 16px;
+}
+@media screen and (max-width: 480px) {
+    .form__contacto,.form,.contacto{
+        justify-content:center ;
+        width: 480px;
+    }
+ 
+    .izquierda{
+        display: none;
+    }
+ }
