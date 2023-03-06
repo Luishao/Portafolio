@@ -46,3 +46,9 @@ select:focus {
     padding: 0px;
     gap: 32px;
 }
+@media(max-width:375px){
+    .all{
+        box-sizing: border-box;
+        width: 375px;
+    }
+}
