@@ -4,26 +4,20 @@
     align-items: center;
     padding: 0px;
     gap: 32px;
-
 }
 
 .skills__title {
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
-    color: #464646;
+    text-align: center;
 }
 
 .skills__line {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    width: 1136px;
-
+    width: 1440px;
+    justify-content: space-between;
 }
 
 .skills__box {
@@ -33,11 +27,9 @@
     align-items: flex-start;
     padding: 16px;
     gap: 8px;
-
     width: 176px;
     height: 174px;
     background: #FFFFFF;
-
 }
 
 .skills__img {
@@ -49,27 +41,39 @@
 }
 
 .skills__name {
-    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     display: flex;
     align-items: center;
-    color: #464646;
+
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width:375px) {
     .skills {
-        width: 480px;
+        display: flex;
+        align-items: center;
+    }
 
+    .skills__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
     }
 
     .skills__line {
-        display: flex;
+        box-sizing: border-box;
+        padding: 12px;
+        width: 100%;
         flex-wrap: wrap;
-        width: auto;
-        justify-content: center;
+        gap: 10px;
+    }
+
+    .skills__box {
+        box-sizing: border-box;
+        width: 45%;
 
     }
+  
 }

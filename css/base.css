@@ -4,15 +4,45 @@
     --azul-clarito: #EAF2FD;
 }
 
+body {
+    background: #F5F5F5;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
 .all {
-    background: var(--background-body);
+    font-family: var(--raleway);
+    color: #464646;
+    font-style: normal;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
-    gap: 32px;
     position: absolute;
     left: 0%;
     right: 0%;
-    top: 0px;  
+    top: 0px;
+    padding: 0px;
+    gap: 32px;
 }

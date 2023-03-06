@@ -4,51 +4,48 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px;
+    gap: 208px;
+    width: 1440px;
+
 }
 
 .title__div {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: flex-start;
     padding: 0px;
-    width: 1136px;
-   
+
 }
 
 .title__profile {
     width: 368px;
     height: 368px;
     border-radius: 100%;
-    order: 2;
+
 }
 
 .title__container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
-    padding: 0px;
+    padding-top: 40px;
     gap: 24px;
-    width: 751px;
-  
+
 }
 
 .title__bio {
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 52px;
     line-height: 61px;
+
 }
 
 .title__subsection {
-
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
 
-    color: #464646;
 }
 
 .title__network {
@@ -57,35 +54,60 @@
     align-items: flex-start;
     padding: 0px;
     gap: 32px;
-
 }
 
 .title__network__item {
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
 }
-@media screen and (max-width: 480px) {
-    .title{
-        width: 480px;
-    }
-    .title__container{
-        width: auto;
+
+@media(max-width:375px) {
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 360px;
 
     }
+
     .title__div {
-        width: 480px;
-    }
-    .title__bio {
-        width: auto;
-        font-size: 40px;
-        line-height: 50px;
+        width: 360px;
+        display: flex;
+        flex-direction: column;
     }
 
-    .title__div{
-        flex-direction: column-reverse;
-        width: auto;
+    .title__profile {
+        width: 100px;
+        height: 100px;
     }
+
+    .title__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 16px;
+    }
+
+    .title__bio {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .title__subsection {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .title__network {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+    }
+
 }

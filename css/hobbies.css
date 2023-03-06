@@ -1,10 +1,12 @@
 .hobbies {
+    font-family: 'Raleway';
+    font-style: normal;
+    color: #464646;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
     gap: 32px;
-  
+ 
 
 }
 
@@ -14,16 +16,15 @@
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
-    color: #464646;
+    text-align: center;
 }
 
 .hobbies__line {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    width: 1136px;
+    width: 1440px;
+    justify-content: space-between;
+    margin-bottom: 16px;
 
 }
 
@@ -37,7 +38,6 @@
     width: 176px;
     height: 174px;
     background: #FFFFFF;
-
 }
 
 .hobbies__img {
@@ -57,18 +57,33 @@
     display: flex;
     align-items: center;
     color: #464646;
-}
-@media screen and (max-width: 480px) {
-    .hobbies {
-        width: auto;
 
+}
+
+@media (max-width:375px) {
+    .hobbies {
+        display: flex;
+        align-items: center;
+    }
+
+    .hobbies__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
     }
 
     .hobbies__line {
-        display: flex;
+        box-sizing: border-box;
+        padding: 12px;
+        width: 100%;
         flex-wrap: wrap;
-        width: auto;
-        justify-content: center;
+        gap: 10px;
+    }
+
+    .hobbies__box {
+        box-sizing: border-box;
+        width: 45%;
 
     }
+  
 }
